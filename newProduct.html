@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para el contenedor del formulario */
+    .formulario-contenedor {
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5rem;
+        padding: 20px;
+    }
+
+    /* Estilos para el título del formulario */
+    .formulario-contenedor h2 {
+        font-size: 1.5em;
+        color: #222222;
+    }
+
+
+    /* Estilos para los grupos del formulario */
+    .formulario {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    /* Estilos para etiquetas del formulario */
+    .formulario label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Estilos para las casillas del formulario */
+    .formulario input {
+
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #e3dddc;
+        border-radius: 4px;
+        margin: 5px;
+    }
+
+    .link{
+        margin-top: 4vh;
+    }
+    /* Estilos para el botón de envío */
+    form button {
+        background-color: #574441;
+        padding: 10px 20px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    form button:hover {
+        background-color: #574441;
+    }
+    </style>
+    <title>NewProduct</title>
+</head>
+<body>
+    <div class="formulario-contenedor">
+        <h2>Formulario de Producto</h2>
+        <form class="formulario">
+            <div class="link">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="link">
+                <label for="precio">Precio del Producto:</label>
+                <input type="number" id="precio" name="precio" required step="0.01">
+            </div>
+            <div class="link">
+                <label for="categoria">Categoría del Producto:</label>
+                <input type="text" id="categoria" name="categoria" required>
+            </div>
+            <button type="submit">Guardar Producto</button>
+            <div>
+                <a href="Index.html">Volver atras</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The-Store</title>
+    <style>
+    /* Estilos para el cuerpo*/
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    /* Estilos para la barra*/
+    .barra {
+        background-color: #e3dddc; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    /* Estilos para el logo*/
+    .logo img {
+        max-width: 150px;
+        height: auto;
+    }
+    .barra-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .barra-links li {
+        margin-right: 20px;
+    }
+
+    /* Estilos para los enlaces */
+    .barra-links a {
+        text-decoration: none;
+        color: #fff; 
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+    /* Cambio de color */
+    .barra-links a:hover {
+        color: #b0d0ee; 
+    }
+    /* Estilos para las tarjetas */
+    .tarjeta {
+        border: 1px solid #e3dddc;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px #b0d0ee;
+        text-align: center;
+        margin: 20px;
+        display: inline-block;
+        padding: 20px;
+        background-color: #fff;
+        transition: transform 0.2s;
+    }
+    /* Estilo del botón de compra */
+    .comprar-boton {
+        background-color: #e3dddc; 
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    /* Estilo de precio */
+    .precio {
+        font-size: 1.2em;
+        color: #222222; 
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+    <nav class="barra">
+        <div class="logo">
+            <img src="img/store_r.png" alt="Logo de la organización">
+        </div>
+        <ul class="barra-links">
+            <li><a href="/Index.html">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="newProduct.html">New Product</a></li>
+            <li><a href="#">Sing In</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <div class="tarjeta">
+                <h3>Camisa</h3>
+                <img src="img/camisa.jpg" width="100px" height="100px">
+                <p>Descripción del producto</p>
+                <p>$50.000</p>
+                Foto de <a href="https://unsplash.com/es/@faithandyarn_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Faith & Yarn</a> en <a href="https://unsplash.com/es/fotos/camiseta-negra-con-cuello-redondo-Wr0TpKqf26s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                <button class="comprar-boton">Comprar</button>
+            </div>
+            <div class="tarjeta">
+                <h3>Pantalon</h3>
+                <img src="img/pantalon.jpg" width="100px" height="100px">
+                <p>Descripción del producto</p>
+                <p>$50.000</p>
+                Foto de <a href="https://unsplash.com/es/@mnzoutfits?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mnz</a> en <a href="https://unsplash.com/es/fotos/tres-pantalones-de-mezclilla-de-colores-surtidos-m1m2EZOZVwA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                <button class="comprar-boton">Comprar</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
